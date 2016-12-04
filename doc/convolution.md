@@ -505,8 +505,8 @@ The parameters are the following:
   * `kH`: The kernel height.
   * `dW`: The step in the width dimension. Default is `1`.
   * `dH`: The step in the height dimension. Default is `1`.
-  * `padW`: The additional zeros added per width to the input planes. Default is `0`, a good number is `(kW-1)/2`.
-  * `padH`: The additional zeros added per height to the input planes. Default is `0`, a good number is `(kH-1)/2`.
+  * `padW`: The additional zeros added per width to the input planes. Default is `0`. Used mostly to adjust output size.
+  * `padH`: The additional zeros added per height to the input planes. Default is `0`. Used mostly to adjust output size.
 
 If the input image is a 3D tensor `nInputPlane x iH x iW`, the output image size
 will be `nOutputPlane x oH x oW` where
